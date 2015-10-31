@@ -12,10 +12,12 @@ Welcome, {{username}}!
     </select>
     <button type="submit">Submit</button>
 </form>
+
 <form action="delete-beer" method="post">
     <input type="number" placeholder="Beer #" name="beerid"/>
     <button type="submit">Delete</button>
 </form>
+
 {{#beers}}
 {{id}}. {{name}} - {{type}}<br>
 {{/beers}}
